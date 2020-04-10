@@ -12,17 +12,17 @@ public class ProductCategory {
     public ProductCategory() {
         counter++;
         id = counter;
-        name = "undefined";
-        department = "undefined";
-        description = "undefined";
+        this.name = "undefined";
+        this.department = "undefined";
+        this.description = "undefined";
     }
 
     public ProductCategory(String name, String department, String description) {
         counter++;
         id = counter;
-        name = name;
-        department = department;
-        description = description;
+        this.name = name;
+        this.department = department;
+        this.description = description;
     }
 
     public int getId() {

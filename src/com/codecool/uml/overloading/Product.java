@@ -15,21 +15,21 @@ public class Product {
     public Product() {
         counter++;
         id = counter;
-        name = "undefined";
-        defaultPrice = 9999.99F;
-        defaultCurrency = Currency.getInstance(Locale.US);
-        //productCategory =
-        //supplier =
+        this.name = "undefined";
+        this.defaultPrice = 9999.99F;
+        this.defaultCurrency = Currency.getInstance(Locale.US);
+        this.productCategory = null;
+        this.supplier = null;
     }
 
     public Product(String name, float defaultPrice, Currency defaultCurrency) {
         counter++;
         id = counter;
-        name = name;
-        defaultPrice = defaultPrice;
-        defaultCurrency = defaultCurrency;
-        //productCategory =
-        //supplier =
+        this.name = name;
+        this.defaultPrice = defaultPrice;
+        this.defaultCurrency = defaultCurrency;
+        productCategory = null;
+        supplier = null;
     }
 
     public int getId() {

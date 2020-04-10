@@ -11,15 +11,15 @@ public class Supplier {
     public Supplier() {
         counter++;
         id = counter;
-        name = "undefined";
-        description = "undefined";
+        this.name = "undefined";
+        this.description = "undefined";
     }
 
     public Supplier(String name, String description) {
         counter++;
         id = counter;
-        name = name;
-        description = description;
+        this.name = name;
+        this.description = description;
     }
 
     public int getId() {
