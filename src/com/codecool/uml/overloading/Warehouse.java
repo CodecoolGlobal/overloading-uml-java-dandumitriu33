@@ -15,11 +15,23 @@ public class Warehouse {
     }
 
     public static List<Product> getAllProductsBy (ProductCategory productCategory) {
-        return productlist; //TODO change return
+        List<Product> result = new ArrayList<>();
+        for (int i=0; i<productlist.size(); i++) {
+            if (productlist.get(i).getProductCategory()==productCategory) {
+                result.add(productlist.get(i));
+            }
+        }
+        return result;
     }
 
     public static List<Product> getAllProductsBy(Supplier supplier) {
-        return productlist; //TODO change return
+        List<Product> result = new ArrayList<>();
+        for (int i=0; i<productlist.size(); i++) {
+            if (productlist.get(i).getSupplier()==supplier) {
+                result.add(productlist.get(i));
+            }
+        }
+        return result;
     }
 
 }
